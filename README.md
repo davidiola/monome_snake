@@ -5,4 +5,5 @@ Dependencies: sgarcez/gomonome
 
 Here's a video of it running on my grayscale 64:
 
-![](https://media.giphy.com/media/1hBVgTiW2PsdbgpJDm/giphy.gif)
+[monome_snake](https://media.giphy.com/media/1hBVgTiW2PsdbgpJDm/giphy.gif)
+[small](https://media.giphy.com/media/1hBVgTiW2PsdbgpJDm/200w_d.gif)
