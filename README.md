@@ -5,4 +5,4 @@ Dependencies: sgarcez/gomonome
 
 Here's a video of it running on my grayscale 64:
 
-![](https://i.imgur.com/Bv4n6L0.gifv)
+![](https://i.imgur.com/Bv4n6L0.mp4)
