@@ -3,9 +3,9 @@ This golang monome snake program utilizes the monome grid's accelerometer (ensur
 
 ## Dependencies:
 
-[sgarcez/gomonome] (https://github.com/sgarcez/gomonome)
+[sgarcez/gomonome](https://github.com/sgarcez/gomonome)
 
-Turn Tilt functionality on (I use [this] (http://archive.monome.org/community/discussion/15814/monome-home-a-serialosc-device-manager/p1) max application for turning the tilt sensor on)
+Turn Tilt functionality on (I use [this](http://archive.monome.org/community/discussion/15814/monome-home-a-serialosc-device-manager/p1) max application for turning the tilt sensor on)
 
 ### Here's a video of it running on my grayscale 64:
 
