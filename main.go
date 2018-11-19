@@ -23,7 +23,7 @@ type Tuple struct {
 	C int32
 }
 
-func gridDemo(port int32) *monome.Grid {
+func receiveTiltInfo(port int32) *monome.Grid {
 	g, err := monome.StartGrid(port)
 	if err != nil {
 		panic(err)
@@ -155,7 +155,7 @@ func main() {
 
 	switch e.DeviceKind() {
 	case "grid":
-		g = gridDemo(e.Port)
+		g = receiveTiltInfo(e.Port)
 	}
 
 	//create snake with length 1 at random internal cells that aren't pellet
@@ -165,11 +165,10 @@ func main() {
 	pelletLoc := setNewPellet(g, snake)
 	fmt.Println(pelletLoc)
 
-	//check if snake hits itself
+	//check if snake hits itself or runs into edge
 	for boundaryConditions(snake) == false {
 		time.Sleep(time.Second / time.Duration(fps))
 		//check if head of snake has hit pellet
-		//next location?
 		nextLocation := snake[0]
 		switch direction {
 		case LEFT:
@@ -185,7 +184,6 @@ func main() {
 		//front of slice is always head
 		if nextLocation.R == pelletLoc.R && nextLocation.C == pelletLoc.C {
 			appendToSnake := pelletLoc
-			//fix this
 			snake = append([]Tuple{appendToSnake}, snake...)
 			g.LedSet(appendToSnake.C, appendToSnake.R, 1)
 			//set new head to be the pelletLocation and move all previous locations up one
@@ -218,7 +216,7 @@ func waitOnSignal(g *monome.Grid) {
 		done <- true
 	}()
 
-	g.LedAll(false)
+	g.LedAll(false) //turn off the lights
 
 	<-done
 	fmt.Println("exiting")
