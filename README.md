@@ -9,7 +9,7 @@ Turn Tilt functionality on (I use [this](http://archive.monome.org/community/dis
 
 ### Here's a video of it running on my grayscale 64:
 
-[monome_snake](https://media.giphy.com/media/1hBVgTiW2PsdbgpJDm/giphy.gif)
+[monome_snake](https://gfycat.com/tautredcatfish)
 
 
-![](https://media.giphy.com/media/1hBVgTiW2PsdbgpJDm/200w_d.gif)
+![](https://gfycat.com/tautredcatfish.gif)
